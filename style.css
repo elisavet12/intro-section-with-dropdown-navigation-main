@@ -1,0 +1,111 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Epilogue";
+  font-size: 18px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.attribution {
+}
+.container {
+}
+.dropdown-menu {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.dropdown-menu:hover .menu-btn {
+  background-color: ;
+}
+.info-btn {
+}
+.info-excerpt {
+}
+.info-title {
+  font-size: 4.5rem;
+  width: 11ch;
+  font-weight: 700;
+}
+.links {
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 6rem;
+  gap: 2rem;
+}
+
+.menu-btn {
+  background-color: ;
+  color: ;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: ;
+  width: ;
+  box-shadow: ;
+  z-index: 1;
+}
+
+.menu-content a {
+  color: ;
+  padding: ;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content a:hover {
+  background-color: ;
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.nav-bar__item {
+  display: inline-block;
+}
+.nav-bar__left {
+}
+.nav-bar__logo {
+}
+.nav-bar__right {
+}
+.section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-left__info {
+}
+.section-left__sponsors {
+}
+.section-right {
+}
+.section-right__image {
+  width: 100%;
+  max-width: 960px;
+}
+.sponsor-img {
+}
+
+.showDropdown {
+  display: block;
+}
