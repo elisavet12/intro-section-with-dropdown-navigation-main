@@ -37,17 +37,33 @@
         <div class="nav-bar__left">
           <img src="./images/logo.svg" alt="logo" class="nav-bar__logo" />
           <div class="dropdown-menu nav-bar__item">
-            <button class="menu-btn" onclick="dropdownMenu()">Features</button>
-            <div class="menu-content" id="dropdownId">
+            <button class="menu-btn" onclick="myFunction()">Features
+              <img src="./images/icon-arrow-up.svg" alt="" class="test">
+            </button>
+            <div class="menu-content" id="dropdownIdFeatures">
+              <div class="menu-content__item">
+                <img src="./images/icon-todo.svg" alt="todo" class="menu-img">
               <a href="#" class="links">Todo List</a>
-              <a href="#" class="links">Calendar</a>
+            </div>
+              <div class="menu-content__item">
+                <img src="./images/icon-calendar.svg" alt="Calendar" class="menu-img">
+              <a href="#" class="links">Calendar</a> 
+            </div>
+            <div class="menu-content__item">
+              <img src="./images/icon-reminders.svg" alt="Reminders" class="menu-img">
               <a href="#" class="links">Reminders</a>
+              </div>
+              <div class="menu-content__item">
+                <img src="./images/icon-planning.svg" alt="Planning" class="menu-img">
+                </div>
               <a href="#" class="links">Planning</a>
             </div>
           </div>
           <div class="dropdown-menu nav-bar__item">
-            <button class="menu-btn" onclick="dropdownMenu()">Company</button>
-            <div class="menu-content" id="dropdownId">
+            <button class="menu-btn" onclick="dropdownMenu()">Company
+              <img src="./images/icon-arrow-up.svg" alt="" class="test">
+            </button>
+            <div class="menu-content" id="dropdownIdCompany">
               <a href="#" class="links">History</a>
               <a href="#" class="links">Our Teams</a>
               <a href="#" class="links">Blog</a>
@@ -59,7 +75,7 @@
         <div class="nav-bar__right">
           <div class="nav-bar__item">Login</div>
           <div class="dropdown-menu nav-bar__item">
-            <button class="menu-btn">Register</button>
+            <button class="menu-btn menu-btn__register">Register</button>
         </div>
       </nav>
 
@@ -92,7 +108,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Elisavet 🐣</a>.
     </div>
     <script src="./intro.js"></script>
   </body>
