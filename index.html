@@ -33,14 +33,18 @@
   </head>
   <body>
     <main class="container">
-      <nav class="nav-bar">
+      <nav class="nav-bar__container">
+        <img src="./images/logo.svg" alt="logo" class="nav-bar__logo" />
+        <div class="nav-bar side-bar" id="mySidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <img src="./images/icon-close-menu.svg" alt="close" class="closebtn__img"></a>
         <div class="nav-bar__left">
-          <img src="./images/logo.svg" alt="logo" class="nav-bar__logo" />
+          
           <div class="dropdown-menu nav-bar__item">
             <button class="menu-btn" onclick="myFunction()">Features
               <img src="./images/icon-arrow-up.svg" alt="" class="test">
             </button>
-            <div class="menu-content" id="dropdownIdFeatures">
+            <div class="menu-content menu-content__features" id="dropdownIdFeatures">
               <div class="menu-content__item">
                 <img src="./images/icon-todo.svg" alt="todo" class="menu-img">
               <a href="#" class="links">Todo List</a>
@@ -63,7 +67,7 @@
             <button class="menu-btn" onclick="dropdownMenu()">Company
               <img src="./images/icon-arrow-up.svg" alt="" class="test">
             </button>
-            <div class="menu-content" id="dropdownIdCompany">
+            <div class="menu-content menu-content__company" id="dropdownIdCompany">
               <a href="#" class="links">History</a>
               <a href="#" class="links">Our Teams</a>
               <a href="#" class="links">Blog</a>
@@ -76,6 +80,11 @@
           <div class="nav-bar__item">Login</div>
           <div class="dropdown-menu nav-bar__item">
             <button class="menu-btn menu-btn__register">Register</button>
+        </div>
+        </div>
+        <div id="nav-bar__burger">
+          <button class="openbtn" onclick="openNav()">
+          <img src="./images/icon-menu.svg" alt="" class=""></button>
         </div>
       </nav>
 
@@ -98,6 +107,7 @@
     </section>
     <section class="section-right">
       <img src="./images/image-hero-desktop.png" alt="hero" class="section-right__image">
+      <img src="./images/image-hero-mobile.png" alt="hero" class="section-right__image-mobile">
     </section>
     </div>
     </main>
