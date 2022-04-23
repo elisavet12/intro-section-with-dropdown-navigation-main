@@ -17,11 +17,14 @@ body {
 .container {
   background-color: var(--Almost-White);
   margin: 2rem;
-  /* overflow: hidden; */
 }
+
+.nav-bar__container-mobile {
+  display: none;
+}
+
 .dropdown-menu {
   position: relative;
-  /* display: inline-block; */
 }
 
 .info-btn {
@@ -52,8 +55,6 @@ body {
   font-weight: 700;
   color: var(--Almost-Black);
 }
-.links {
-}
 
 .main-content {
   display: grid;
@@ -66,7 +67,6 @@ body {
 .menu-btn {
   background-color: var(--Almost-White);
   color: var(--Medium-Gray);
-  /* padding: 15px; */
   cursor: pointer;
   font-size: 14px;
   border: none;
@@ -84,8 +84,6 @@ body {
   display: none;
   position: absolute;
   background-color: white;
-  width: ;
-  box-shadow: ;
   z-index: 1;
 }
 
@@ -99,13 +97,11 @@ body {
 
 .menu-content a {
   color: var(--Medium-Gray);
-  padding: ;
   text-decoration: none;
   display: block;
 }
 
 .menu-content a:hover {
-  background-color: ;
   text-decoration: none;
 }
 
@@ -121,32 +117,33 @@ body {
 
 .nav-bar__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   font-size: 14px;
   padding: 2rem;
 }
+
 .nav-bar__item {
   display: inline-block;
   margin-left: 2rem;
   cursor: pointer;
 }
+.nav-bar__left-right {
+  display: flex;
+  align-items: center;
+}
+
 .nav-bar__left {
   display: flex;
   align-items: center;
 }
-.nav-bar__logo {
-}
-.nav-bar__right {
-}
+
 .section-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 4rem;
-}
-.section-left__info {
 }
 .section-left__sponsors {
   margin-top: 6.5rem;
@@ -174,9 +171,6 @@ body {
 
 .showDropdown {
   display: block;
-  /* border: solid 1px; */
-  /* height: 8rem; */
-  /* width: 8rem; */
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -185,77 +179,82 @@ body {
   box-shadow: 1px 0px 8px var(--Medium-Gray);
 }
 
-.openbtn {
-  display: none;
-}
-
-.closebtn__img {
-  display: none;
-}
-
 /* mobile sidebar starts here */
 
 .nav-bar__sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
   top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  right: 0;
+  background-color: var(--Almost-White);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
 }
 
 /* The sidebar links */
 .nav-bar__sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+  font-size: 16px;
+  color: var(--Medium-Gray);
   transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
 .nav-bar__sidebar a:hover {
-  color: #f1f1f1;
+  color: var(--Almost-Black);
 }
-
-/* Position and style the close button (top right corner) */
 .nav-bar__sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
   margin-left: 50px;
 }
-
-/* The button used to open the sidebar */
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
   color: white;
   padding: 10px 15px;
   border: none;
 }
 
-.openbtn:hover {
-  background-color: #444;
+.closebtn__img {
+  width: 100%;
+  max-width: 1rem;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main-mobile {
-  transition: margin-left 0.5s; /* If you want a transition effect */
+  transition: margin-left 0.5s;
   padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
 }
 
 @media only screen and (max-width: 1220px) {
   .main-content {
     grid-template-columns: 1fr;
     padding: 0;
+  }
+
+  #main-mobile {
+    display: flex;
+  }
+
+  .nav-bar__left-right {
+    display: none;
+  }
+
+  .nav-bar__right {
+    display: none;
+  }
+
+  .nav-bar__logo {
+    position: relative;
+    top: -5rem;
   }
 
   .section-right {
@@ -280,6 +279,34 @@ body {
   .section-left__info {
     text-align: center;
   }
+
+  .nav-bar__container-mobile {
+    display: block;
+  }
+
+  /* dropdown-menu mobile version starts here  */
+
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  .active {
+    color: var(--Medium-Gray);
+  }
+
+  .dropdown-container {
+    display: none;
+    /* background-color: #262626; */
+    padding-left: 8px;
+  }
+
+  .menu-btn {
+    padding: 15px;
+    text-align: left;
+  }
+
+  /* the end */
 
   @media only screen and (max-width: 850px) {
     .container {
@@ -313,10 +340,6 @@ body {
       gap: 0.5rem;
     }
   }
-
-  /* .nav-bar__item {
-    display: none;
-  } */
 
   @media only screen and (max-width: 420px) {
     .sponsor-img {

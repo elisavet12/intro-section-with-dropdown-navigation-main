@@ -34,71 +34,66 @@
     </style>
   </head>
   <body>
-    <main class="container">
+    <main class="container" id="containerMobile">
       <!-- mobile sidebar is starting -->
       <nav class="nav-bar__container-mobile">
         <div class="nav-bar__sidebar" id="mySidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <div class="dropdown-menu nav-bar__item">
-            <button class="menu-btn" onclick="myFunctionMobile()">
-              <a href="#" class="">Features</a>
-            </button>
-            <div
-              class="menu-content menu-content__features"
-              id="dropdownIdFeaturesMobile"
-            >
-              <div class="menu-content__item">
-                <img src="./images/icon-todo.svg" alt="todo" class="menu-img" />
-                <a href="#" class="links">Todo List</a>
-              </div>
-              <div class="menu-content__item">
-                <img
-                  src="./images/icon-calendar.svg"
-                  alt="Calendar"
-                  class="menu-img"
-                />
-                <a href="#" class="links">Calendar</a>
-              </div>
-              <div class="menu-content__item">
-                <img
-                  src="./images/icon-reminders.svg"
-                  alt="Reminders"
-                  class="menu-img"
-                />
-                <a href="#" class="links">Reminders</a>
-              </div>
-              <div class="menu-content__item">
-                <img
-                  src="./images/icon-planning.svg"
-                  alt="Planning"
-                  class="menu-img"
-                />
-              </div>
-              <a href="#" class="links">Planning</a>
-            </div>
-          </div>
-          <div class="dropdown-menu nav-bar__item">
-            <button class="menu-btn" onclick="myFunction()">
-              <a href="#" class="">Careers</a>
-            </button>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img
+              src="./images/icon-close-menu.svg"
+              alt="close"
+              class="closebtn__img"
+          /></a>
+          
+  <button class="menu-btn">Features 
+    <img src="./images/icon-arrow-up.svg" alt="arrow" class="test">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#" class="menu-content__item"><img src="./images/icon-todo.svg" alt="todo" class="menu-img">Todo List</a>
+    <a href="#" class="menu-content__item"><img src="./images/icon-calendar.svg" alt="Calendar" class="menu-img"> Calendar</a>
+    <a href="#" class="menu-content__item"><img
+      src="./images/icon-reminders.svg"
+      alt="Reminders"
+      class="menu-img"
+    />Reminders</a>
+    <a href="#"><img
+      src="./images/icon-planning.svg"
+      alt="Planning"
+      class="menu-img"
+    />Planning</a>
+  </div>
+
+  <button class="menu-btn">Company
+    <img src="./images/icon-arrow-up.svg" alt="arrow" class="test">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#" class="menu-content__item">History</a>
+    <a href="#" class="menu-content__item">Our Teams</a>
+    <a href="#" class="menu-content__item">Blog</a>
+  </div>
+  <button class="menu-btn">Careers
+  </button>
+  <button class="menu-btn">About
+  </button>
+  
+  
+          
           </div>
         </div>
       </nav>
 
       <div id="main-mobile" class="">
         <button class="openbtn" onclick="openNav()">
-          &#9776; Open Sidebar
+          <img src="./images/icon-menu.svg" alt="menu" class="openbtn-img" />
         </button>
       </div>
       <!-- mobile sidebar ends -->
       <nav class="nav-bar__container">
+        <div class="nav-bar__left">
         <img src="./images/logo.svg" alt="logo" class="nav-bar__logo" />
-        <div class="nav-bar" id="">
-          <!-- <img src="./images/icon-close-menu.svg" alt="close" class="closebtn__img"></a> -->
-
-          <div class="nav-bar__left">
+          <div class="nav-bar__left-right">
             <div class="dropdown-menu nav-bar__item">
               <button class="menu-btn" onclick="myFunction()">
                 Features
@@ -159,13 +154,13 @@
             <div class="nav-bar__item">Careers</div>
             <div class="nav-bar__item">About</div>
           </div>
+          </div>
           <div class="nav-bar__right">
             <div class="nav-bar__item">Login</div>
             <div class="dropdown-menu nav-bar__item">
               <button class="menu-btn menu-btn__register">Register</button>
             </div>
           </div>
-        </div>
       </nav>
 
       <div class="main-content">
