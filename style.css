@@ -177,6 +177,7 @@ body {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 1px 0px 8px var(--Medium-Gray);
+  line-height: 2;
 }
 
 /* mobile sidebar starts here */
